@@ -1,0 +1,75 @@
+img {
+    background-color: white;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.players,
+h2,
+.points {
+    display: flex;
+    justify-content: center;
+
+}
+
+.points {
+    gap: 0;
+}
+
+.player {
+    width: 100px;
+    text-align: center;
+}
+
+.point {
+    width: 81.5px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+#p2Point {
+    margin-right: 2px;
+}
+
+
+
+.row {
+    display: flex;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+
+}
+
+.row:nth-child(1) .cell {
+    border-top: none;
+}
+
+.row:nth-child(3) .cell {
+    border-bottom: none;
+}
+
+.row .cell:nth-child(1) {
+    border-left: none;
+}
+
+.row .cell:nth-child(3) {
+    border-right: none;
+}
+
+.active {
+    font-weight: bold;
+}
